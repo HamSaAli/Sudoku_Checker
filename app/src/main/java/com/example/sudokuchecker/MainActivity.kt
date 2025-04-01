@@ -16,6 +16,9 @@ class MainActivity : ComponentActivity() {
 }
 fun main() {
 
-    var a=5
-    println(a++ + ++a)
 }
+
+fun sudokuChecker(sudokuBoard: List<List<Char>>): Boolean {
+    return false
+}
+
