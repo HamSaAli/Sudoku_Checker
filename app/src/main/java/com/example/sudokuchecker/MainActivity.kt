@@ -16,4 +16,6 @@ class MainActivity : ComponentActivity() {
 }
 fun main() {
 
+    var a=5
+    println(a++ + ++a)
 }
