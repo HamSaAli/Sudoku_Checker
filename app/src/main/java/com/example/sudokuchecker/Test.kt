@@ -63,13 +63,19 @@ fun main(){
         correctResult = false
     )
 
+    test(
+        name = "Test 13 - when board have missing row or col should return false",
+        result = sudokuChecker(generateBoard(13)),
+        correctResult = false
+    )
+
 
 }
 
 fun test(name: String, result:Boolean, correctResult:Boolean){
     if (result == correctResult){
-        println("Passed - $name")
-    }else{
-        println("Failed - $name")
+        println("Passed - $name - $result")
+    } else{
+        println("Failed - $name - $result")
     }
 }
