@@ -51,6 +51,30 @@ fun main(){
         correctResult = false
     )
 
+    test(
+        name = "Test 10 - when board contains numbers greater than 9 or less than 1 should return false",
+        result = sudokuChecker(generateBoard(10)),
+        correctResult = false
+    )
+
+    test(
+        name = "Test 11 - when board contains special characters should return false",
+        result = sudokuChecker(generateBoard(11)),
+        correctResult = false
+    )
+
+    test(
+        name = "Test 12 - when board contains letters should return false",
+        result = sudokuChecker(generateBoard(12)),
+        correctResult = false
+    )
+
+    test(
+        name = "Test 13 - when board size is not 9x9 should return false",
+        result = sudokuChecker(generateBoard(13)),
+        correctResult = false
+    )
+
 
 }
 
